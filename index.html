@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta; self-referential (i.e. data about other data) -->
+    <meta charset="UTF-8"> <!-- declares the character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- for legacy Internet Explorer browsers, not really needed anymore -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsiveness -->
+    <meta name="author" content="KingDundee">
+    <meta name="description" content="A landing page project for learning HTML and CSS"> <!-- also good for SEO (if supported) -->
+    <link rel="icon" type="image/x-icon" href="./images/icon.svg"> <!-- favicon -->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all"> <!-- link to css sheet (type="" attribute is legacy) -->
+    <title>Pyramid Mysteries</title> <!-- tab text -->
+  </head>
+  <body>
+    <header id="top">
+      <img src="./images/eye-pyramid.svg" alt="Eye of Providence"> <!-- header logo -->
+      <div class="hero">
+        <h1>Discover the pyramids</h1>
+        <p>Embark on a <strong>global adventure</strong> to uncover the <em>deepest secrets</em> of the ancient pyramid sites.</p>
+        <button>Sign up</button>
+      </div>
+      <nav>
+        <a href="https://en.wikipedia.org/wiki/Egyptian_pyramids">Egyptian</a>
+        <a href="https://en.wikipedia.org/wiki/Mesoamerican_pyramids">Mesoamerican</a>
+        <a href="https://en.wikipedia.org/wiki/Nubian_pyramids">Nubian</a>
+      </nav>
+    </header>
+    <main>
+      <section class="one">
+        <h1 id="gallery_header">Uncover the Age-Old Mysteries</h1>
+        <div class="gallery">
+          <div>
+            <img src="./images/great_pyramids.jpg" alt="The Great Pyramids of Giza">
+            <p>The <em>true</em> origin of the pyramids?</p>
+          </div>
+          <div>
+            <img src="./images/mesoamerican_pyramid.jpg" alt="Mesoamerican pyramid">
+            <p>The <em>significance</em> of their locations?</p>
+          </div>
+          <div>
+            <img src="./images/worship_pyramid.jpg" alt="A pyramid for worship in South America">
+            <p>The <em>link</em> to the gods?</p>
+          </div>
+          <div>
+            <img src="./images/night_sphinx.jpg" alt="Great sphinx of Giza at starry night">
+            <p>The <em>connection</em> to the cosmos?</p>
+          </div>
+        </div>
+      </section>
+      <section class="two">
+        <div class="center_box">
+          <div class="quote"><em>From the heights of these pyramids, forty centuries look down on us.</em></div>
+          <div class="author"><strong>-Napoleon Bonaparte</strong></div>
+        </div>
+      </section>
+      <section class="three">
+        <div class="three_sub">
+          <div class="left_content">
+            <h1>It's time to explore!</h1>
+            <p>Sign up for our <em>once-in-a-lifetime</em> program now!</p>
+          </div>
+          <button>Sign up</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav><a id="return" href="#top">Return to Top</a></nav>
+      <p>Created by: KingDundee</p>
+      <p>In collaboration with: The Odin Project 2022</p>
+    </footer>
+  </body>
+</html>

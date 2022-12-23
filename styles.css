@@ -1,0 +1,205 @@
+/* stylesheet for index.html */
+html {
+  scroll-behavior: smooth;
+}
+
+* { /* universal selector */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #b89d75;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+  box-sizing: border-box; /* alternative box model */
+  min-height: 40vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background-image: url(./images/pyramids.jpg);
+  background-position: 50% 70%; /* horizontal vertical - top left corner 0% 0% */
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 1em; /* based on font size of parent element */
+}
+
+header img {
+  width: 16em;
+  height: 16em;
+  margin-top: -1em; /* position header logo higher vertically */
+}
+
+.hero {
+  align-self: center;
+  width: 32em; /* ideal size */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+
+  color: #1034A6;
+  margin-right: auto; /* fills free space to the right of flex item with margin */
+}
+
+.hero p, .hero button { /* grouping selector */
+  font-size: 1.5em;
+}
+
+.hero button { /* descendant combinator */
+  border-radius: 0.25em;
+  background-color: sandybrown;
+  color: #1034A6;
+  padding: 0.25em 0.5em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+a {
+  text-decoration: none; /* remove link underlines */
+  color: sandybrown;
+  font-size: 1.5em;
+}
+
+main {
+  box-sizing: border-box; /* alternative box model */
+  min-height: 40vh;
+}
+
+.one {
+  margin-bottom: 3em;
+}
+
+#gallery_header {
+  text-align: center;
+  margin: 2em 0 3em 0;
+  text-shadow: 0.1em 0.1em sandybrown;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 16em;
+  height: 16em;
+  border-radius: 1em;
+  border-color: #1034A6;
+  border-width: 0.25em;
+  border-style: solid;
+  margin-bottom: 1em;
+  filter: sepia(0.8); /* also an option for grayscale */
+}
+
+.gallery img:hover {
+  transform: scale(1.2) translate(0%, -10%); /* shift up and scale up while hovering over img */
+}
+
+.gallery div {
+  text-align: center;
+}
+
+.gallery p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: blanchedalmond;*/
+  background-image: linear-gradient(#b89d75, sandybrown);
+  padding: 4em 0;
+}
+
+.quote {
+  font-size: 1.5em;
+  text-shadow: 0.1em 0.1em sandybrown;
+  margin-bottom: 1em;
+}
+
+.quote:hover {
+  font-size: 2em;
+  color: #1034A6;
+}
+
+.author {
+  text-align: right;
+}
+
+.three {
+  display: flex;
+  justify-content: center;
+  background: sandybrown;
+  padding: 4em 0;
+}
+
+.three_sub {
+  background-color: #b89d75;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 8em;
+  gap: 4em;
+  border-radius: 1em;
+  border-color: #1034A6;
+  border-width: 0.25em;
+  border-style: solid;
+  padding: 2em 3em;
+
+  animation-name: colour_change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+
+@keyframes colour_change {
+  from {background-color: #b89d75;}
+  to {background-color: sandybrown;}
+}
+
+.left_content h1 {
+  margin-bottom: 1em;
+}
+
+.three_sub button {
+  font-size: 1.5em;
+  border-radius: 0.25em;
+  background-color: sandybrown;
+  color: #1034A6;
+  padding: 0.25em 0.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  min-height: 16em;
+  background-image: url(./images/pyramids.jpg);
+  background-position: 50% -60%; /* horizontal vertical - top left corner 0% 0% */
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 1.5em;
+  padding: 2em 3em;
+}
+
+#return {
+  color: #1034A6;
+}
